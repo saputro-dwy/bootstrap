@@ -32,9 +32,9 @@ angular.module('ui.bootstrap.dropdown', ['ui.bootstrap.position'])
     // This method may still be called during the same mouse event that
     // unbound this event handler. So check openScope before proceeding.
     if (!openScope) { return; }
-
     if( evt && openScope.getAutoClose() === 'disabled' )  { return ; }
-
+    if (evt.target.localName=='input'){return;}
+    
     var toggleElement = openScope.getToggleElement();
     if ( evt && toggleElement && toggleElement[0].contains(evt.target) ) {
         return;
