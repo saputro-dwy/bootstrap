@@ -219,7 +219,8 @@ angular.module('ui.bootstrap.carousel', [])
     scope: {
       interval: '=',
       noTransition: '=',
-      noPause: '='
+      noPause: '=',
+      showIndicator:'='
     }
   };
 }])
