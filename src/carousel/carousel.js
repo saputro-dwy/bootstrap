@@ -220,7 +220,7 @@ angular.module('ui.bootstrap.carousel', [])
       interval: '=',
       noTransition: '=',
       noPause: '=',
-      showIndicator:'='
+      hiddenIndicator:'='
     }
   };
 }])
